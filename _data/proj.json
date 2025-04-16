@@ -1,0 +1,19 @@
+[
+    
+    {
+        "title": "Match Making Algorithm",
+        "description": "Made a matchmaking algorithm in Java that can match two coders based on their preference in coding languages. The algorithm uses point values for each of the preferences which are then compared with other users for matchmaking. Users with similar interest scores are matched together."
+    },
+    {
+        "title": "Dijkstra's Webpage",
+        "description": "Wrote a webpage that demonstrates Dijkstra's algorithm with a few features. The user clicks on the screen to place walls on a grid of a set size. Once a wall is set, the algorithm will determine a path and show it on the screen with yellow squares. The path is calculated again with every wall placed by the user."
+    },
+    {
+        "title": "Physics Lab Simulation",
+        "description": "Created a simulation for a University level physics lab in Unity. The lab itself deals with rotational dynamics and how torque affects angular acceleration. The purpose of this project was to create an alternative for students who can not attend in-person classes for any reason."
+    },
+    {
+        "title": "C-- Compiler",
+        "description": "Wrote a compiler with Lex, Bison, and C in a small, three-person group. Led said team to make a successful compiler for the 'C--' language which is just an arbitrary language similar to C++."
+    }
+]

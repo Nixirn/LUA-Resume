@@ -1,0 +1,189 @@
+%-------------------------------------------
+% Resume in LuaLatex
+% Author: Kumar Pallav
+% (Works with Overleaf)
+%-------------------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{changepage}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage[urw-garamond]{mathdesign}
+\RequirePackage{luatex85}
+\RequirePackage[skins]{tcolorbox}   
+\usepackage{pdfcomment}
+\usepackage{luacode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%-------------------------------------------
+\addtolength{\oddsidemargin}{-0.475in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+%-------------------------------------------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Colors
+%-------------------------------------------
+
+\definecolor{myblue}{HTML}{5584AC}
+\colorlet{accent}{myblue}
+\colorlet{emphasis}{gray}
+
+% Custom commands
+%-------------------------------------------
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{: \small #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeEduEntry}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpEntry}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3 $\cdot$ #4} & \textit{#5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\skill}[2]{%
+    \textcolor{emphasis}{\textbf{#1}}\hfill
+    \foreach \x in {1,...,5}{%
+      \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}
+    }\par%
+}
+
+\newcommand{\skillsection}[1]{%
+    \textit{\color{black}#1}\par
+}
+
+\newcommand{\simpleskill}[1]{%
+    \textcolor{emphasis}{\textbf{#1}}\par%
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\setlist{rightmargin=10pt}\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Load lua script
+%-------------------------------------------
+\begin{luacode}
+require("lua/parser.lua")
+\end{luacode}
+
+% Print Heading
+%-------------------------------------------
+\directlua{printHeading("_data/personal.json")}
+
+\begin{minipage}[t]{0.70\linewidth}
+\vspace{0.5em}
+% Print Summery
+%-------------------------------------------
+
+\section{Professional Summary}
+  \begin{adjustwidth}{0.5em}{0.5em}
+  \directlua{printProSummery("_data/sum.json")}
+  \end{adjustwidth}
+ 
+% Print Experience
+%-------------------------------------------
+\vspace{-1em}
+\section{Experience}
+  \resumeSubHeadingListStart
+  	\directlua{printExpItems("_data/exp.json")}
+  \resumeSubHeadingListEnd
+\end{minipage}
+\begin{minipage}[t]{0.29\linewidth}
+\vspace{0.5em}
+% Print Skills
+%-------------------------------------------
+\section{Skills}
+    \skillsection{Languages}
+    \skill{C}{4}
+    \skill{C\#}{5}
+    \skill{Java}{5}
+    \skill{JavaScript}{2}
+    \skill{Terraform}{4} 
+    \skill{Python}{3}
+    \skill{Bash}{2}
+    
+    \vspace{1em}
+    \skillsection{Software \& Tools}
+    \skill{Unity}{5}
+    \skill{Azure}{3}
+    \skill{MySQL}{4}
+    \skill{vsCode}{4}
+    \skill{Jira}{5}
+    \skill{Office}{4}
+    
+    \vspace{1em}
+    \skillsection{Operating Systems}
+    \skill{Windows}{5}
+    \skill{Linux}{3}
+    
+    \vspace{1em}
+    \skillsection{General}
+    \simpleskill{Interpersonal Skills}
+    \simpleskill{Teamwork}
+    \simpleskill{Mentor}
+    
+\end{minipage}   
+
+% Print Projects
+%-------------------------------------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \directlua{printProjItems("_data/proj.json")}
+  \resumeSubHeadingListEnd
+  
+  
+% Print Education
+%-------------------------------------------
+\section{Education}
+  \resumeSubHeadingListStart
+	\directlua{printEduItems("_data/edu.json")}
+  \resumeSubHeadingListEnd
+  
+
+
+\end{document}

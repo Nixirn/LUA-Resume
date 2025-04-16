@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Erick Lagunas-Rodriguez",
+        "website": "",
+        "email": "ericklagunas14@gmail.com",
+        "email2": "",
+        "phone": "+1-602-488-3230",
+        "linkedin":"linkedin.com/in/erick-lagunas-rodriguez-01a9a2162",
+        "languages": [
+            {
+                "language": "Java"
+            },
+            {
+                "language": "CSharp"
+            },
+            {
+                "language": "C"
+            },
+            {
+                "language": "Python"
+            },
+            {
+                "language": "JavaScript"
+            }
+        ],
+        "technologies": [
+            {
+                "technology": "Azure"
+            },
+            {
+                "technology": "Unity"
+            },
+            {
+                "technology": "MySQL"
+            }
+        ]
+    }
+]

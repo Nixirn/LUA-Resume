@@ -1,0 +1,48 @@
+[   
+    {
+        "company": "Paychex",
+        "company_location": "Rochester, NY",
+        "role": "Software Engineer I",
+        "team": "Scruminators",
+        "time_duration": " June 2022 - April 2025",
+        "details": [
+            {
+                "title": "Test Creation and Maintainment",
+                "description": ""
+            },
+            {
+                "title": "Full Stack Web Developnment",
+                "description": ""
+            },
+            {
+                "title": "Incident Managment",
+                "description": ""
+            },
+            {
+                "title": "Project Mentoring",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "company": "Paychex",
+        "company_location": "Phoenix, AZ",
+        "role": "Remote Internship",
+        "team": "Streamers",
+        "time_duration": "September 2021 - May 2022",
+        "details": [
+            {
+                "title": "Goal",
+                "description": "The goal of the project is to make a cloud system that analyzes a live stream of data for 'Paychex, Inc'. The final system will take a variety of different data types from Kafka, a streaming platform, and abstract them to be analyzed using Microsoft Azure, a Microsoft cloud ecosystem."
+            },
+            {
+                "title": "Azure",
+                "description": "Worked with many of Azure's technologies such as Azure VMs. Created and managed a VM used to host the Kafka component of the system. The VM was configured with the necessary software and the ability to support many users concurrently."
+            },
+            {
+                "title": "Peer Mentor",
+                "description": "Trained our team of five peers how to operate the VM to minimize its costs. In Github, I taught the team how to commit changes and minimize any conflicts that may arise from development."
+            }
+        ]
+    }
+]

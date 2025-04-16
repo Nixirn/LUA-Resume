@@ -1,0 +1,14 @@
+[
+    {
+        "school": "Grand Canyon University",
+        "school_location": "Phoenix, Arizona",
+        "degree": "Bachelor of Science in Computer Science; GPA 3.52",
+        "time_period": "August 2019 - April 2022"
+    },
+    {
+        "school": "Estrella Mountain Community College",
+        "school_location": "Avondale, Arizona",
+        "degree": "Associate in Science, Emphasis in Computer Science; CGPA 3.902",
+        "time_period": "Jun 2017 - Spring 2019"
+    }
+]
