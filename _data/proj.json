@@ -1,8 +1,8 @@
 [
     
     {
-        "title": "Match Making Algorithm",
-        "description": "Made a matchmaking algorithm in Java that can match two coders based on their preference in coding languages. The algorithm uses point values for each of the preferences which are then compared with other users for matchmaking. Users with similar interest scores are matched together."
+        "title": "Streamers (Paychex Internship)",
+        "description": "The goal of the project is to make a cloud system that analyzes a live stream of data for 'Paychex, Inc'. The final system will take a variety of different data types from Kafka, a streaming platform, and abstract them to be analyzed using Microsoft Azure, a Microsoft cloud ecosystem."
     },
     {
         "title": "Dijkstra's Webpage",

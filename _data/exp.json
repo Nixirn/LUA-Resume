@@ -7,20 +7,16 @@
         "time_duration": " June 2022 - April 2025",
         "details": [
             {
-                "title": "Test Creation and Maintainment",
-                "description": "Learned how to create automatic tests to ensure complex UI elements worked correctly with an in house framework and Gauge. Taught team how to use "
+                "title": "Test Creation and Maintaining",
+                "description": "Learned how to create automatic tests to ensure complex UI elements worked correctly with an in house framework and Gauge, which had not been used yet. Taught team how to use this new framework with a series of meetings."
             },
             {
-                "title": "Full Stack Web Developnment",
-                "description": ""
+                "title": "Full Stack Web Development",
+                "description": "Took part in creating complex UI elements, adding backend code code to allow said UI elements to pull data using RESTful controllers and learned to use technologies like Jenkins to seamlessly deploy changes to production and test environments"
             },
             {
-                "title": "Incident Managment",
-                "description": ""
-            },
-            {
-                "title": "Project Mentoring",
-                "description": ""
+                "title": "Incident Management",
+                "description": "Used SQL with technologies like TOAD to query Oracle databases to diagnose/fix issues in production and test environments"
             }
         ]
     },
@@ -31,10 +27,6 @@
         "team": "Streamers",
         "time_duration": "September 2021 - May 2022",
         "details": [
-            {
-                "title": "Goal",
-                "description": "The goal of the project is to make a cloud system that analyzes a live stream of data for 'Paychex, Inc'. The final system will take a variety of different data types from Kafka, a streaming platform, and abstract them to be analyzed using Microsoft Azure, a Microsoft cloud ecosystem."
-            },
             {
                 "title": "Azure",
                 "description": "Worked with many of Azure's technologies such as Azure VMs. Created and managed a VM used to host the Kafka component of the system. The VM was configured with the necessary software and the ability to support many users concurrently."
