@@ -1,7 +1,6 @@
 %-------------------------------------------
 % Resume in LuaLatex
-% Author: Kumar Pallav
-% (Works with Overleaf)
+% Author: Erick Lagunas
 %-------------------------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -82,7 +81,7 @@
 \newcommand{\skill}[2]{%
     \textcolor{emphasis}{\textbf{#1}}\hfill
     \foreach \x in {1,...,5}{%
-      \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}
+      \space{\ifnumgreater{\x}{#2}{\color{emphasis}}{\color{accent}}\faCircle}
     }\par%
 }
 
@@ -140,21 +139,22 @@ require("lua/parser.lua")
 \section{Skills}
     \skillsection{Languages}
     \skill{C}{4}
-    \skill{C\#}{5}
+    \skill{C\#}{4}
     \skill{Java}{5}
-    \skill{JavaScript}{2}
-    \skill{Terraform}{4} 
+    \skill{JavaScript}{4}
     \skill{Python}{3}
-    \skill{Bash}{2}
+    \skill{TypeScript}{4}
     
     \vspace{1em}
     \skillsection{Software \& Tools}
     \skill{Unity}{5}
     \skill{Azure}{3}
-    \skill{MySQL}{4}
+    \skill{Gauge}{5}
+    \skill{TOAD}{3}
     \skill{vsCode}{4}
+    \skill{Intellij}{4}
     \skill{Jira}{5}
-    \skill{Office}{4}
+    \skill{ReactJS}{4}
     
     \vspace{1em}
     \skillsection{Operating Systems}
@@ -163,7 +163,6 @@ require("lua/parser.lua")
     
     \vspace{1em}
     \skillsection{General}
-    \simpleskill{Interpersonal Skills}
     \simpleskill{Teamwork}
     \simpleskill{Mentor}
     
@@ -171,6 +170,7 @@ require("lua/parser.lua")
 
 % Print Projects
 %-------------------------------------------
+\vspace{-1em}
 \section{Projects}
   \resumeSubHeadingListStart
     \directlua{printProjItems("_data/proj.json")}

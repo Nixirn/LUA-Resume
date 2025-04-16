@@ -29,11 +29,11 @@
         "details": [
             {
                 "title": "Azure",
-                "description": "Worked with many of Azure's technologies such as Azure VMs. Created and managed a VM used to host the Kafka component of the system. The VM was configured with the necessary software and the ability to support many users concurrently."
+                "description": "Created and managed a VM used to host the Kafka component of the system. The VM was configured with the necessary software and the ability to support many users concurrently."
             },
             {
                 "title": "Peer Mentor",
-                "description": "Trained our team of five peers how to operate the VM to minimize its costs. In Github, I taught the team how to commit changes and minimize any conflicts that may arise from development."
+                "description": "Trained our team of five peers how to operate an Azure VM to minimize its costs. Mentored team on how to use Github and follow industry practices."
             }
         ]
     }
