@@ -12,11 +12,11 @@
             },
             {
                 "title": "Full Stack Web Development",
-                "description": "Took part in creating complex UI elements, adding backend code code to allow said UI elements to pull data using RESTful controllers and learned to use technologies like Jenkins to seamlessly deploy changes to production and test environments"
+                "description": "Took part in creating complex UI elements, adding backend code code to allow said UI elements to pull data using RESTful controllers and learned to use technologies like Jenkins to seamlessly deploy changes to production and test environments."
             },
             {
                 "title": "Incident Management",
-                "description": "Used SQL with technologies like TOAD to query Oracle databases to diagnose/fix issues in production and test environments"
+                "description": "Used SQL with technologies like TOAD to query Oracle databases to diagnose/fix issues in production and test environments."
             }
         ]
     },

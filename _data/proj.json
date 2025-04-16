@@ -1,12 +1,12 @@
 [
     
     {
-        "title": "Streamers (Paychex Internship)",
-        "description": "The goal of the project is to make a cloud system that analyzes a live stream of data for 'Paychex, Inc'. The final system will take a variety of different data types from Kafka, a streaming platform, and abstract them to be analyzed using Microsoft Azure, a Microsoft cloud ecosystem."
+        "title": "Match Making Algorithm",
+        "description": "Made a matchmaking algorithm in Java that can match two coders based on their preference in coding languages. The algorithm uses point values for each of the preferences which are then compared with other users for matchmaking. Users with similar interest scores are matched together."
     },
     {
-        "title": "Dijkstra's Webpage",
-        "description": "Wrote a webpage that demonstrates Dijkstra's algorithm with a few features. The user clicks on the screen to place walls on a grid of a set size. Once a wall is set, the algorithm will determine a path and show it on the screen with yellow squares. The path is calculated again with every wall placed by the user."
+        "title": "Streamers (Paychex Internship)",
+        "description": "The goal of the project was to make a cloud system that analyzes a live stream of data for 'Paychex, Inc'. The final system took a variety of different data types from Kafka, a streaming platform, and abstract them to be analyzed using Microsoft's cloud ecosystem, Azure."
     },
     {
         "title": "Physics Lab Simulation",
